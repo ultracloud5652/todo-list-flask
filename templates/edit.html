@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Edit Task</h1>
+        </div>
+        <form action="{{ url_for('edit_task', task_id=task[0]) }}" method="post">
+            <input type="text" name="task_name" value="{{ task[1] }}">
+            <input type="text" name="task_description" value="{{ task[2] }}">
+            <input type="date" name="task_due_date" value="{{ task[4] }}">
+            <button type="submit">Save</button>
+        </form>
+        <a href="{{ url_for('index') }}">Back to To-Do List</a>
+    </div>
+</body>
+</html>
+

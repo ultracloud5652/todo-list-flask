@@ -1,0 +1,58 @@
+/* static/css/style.css */
+
+body {
+    background-color: #f0f0f0; /* Set a default background color */
+    font-family: Arial, sans-serif; /* Optional: Set a default font family */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* Container background color */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add a shadow for the container */
+    border-radius: 5px; /* Optional: Rounded corners for the container */
+}
+
+.header {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.task-item.completed {
+    background-color: #f0f0f0; /* Background color for completed tasks */
+}
+
+.task-item .completed {
+    color: #999999; /* Text color for completed tasks */
+}
+
+.task-item a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+}
+
+.task-item a:hover {
+    text-decoration: underline;
+}
+
+/* Add more styles as needed */
+
